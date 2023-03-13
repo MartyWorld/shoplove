@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* Border Color */
+.border-golden-yellow {
+    border-color: $golden-yellow !important;
+}
+
+.border-custom-white {
+    border-color: rgba(236, 239, 244, 0.3) !important;
+}
+body,p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.arrow-down {
+    position: absolute; right: 0 ; bottom:0;
+}
+.font-40 {
+    font-size: 40px;
+}
+.btn:hover {
+    opacity: .8;
+}
+.btn.btn-medium {
+    min-width: 120px;
+    height: 50px;
+    font-size: 13px;
+}
+.min-wauto {
+    min-width: auto!important;
+}
+.bg-default-home {
+    background: rgba(233, 235, 237, 0.75);
+}
+
+.bg-cat {
+    background:  #F8F8F8
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Glitten-Regular" !important;
+    font-weight: 400;
+}
+.font-size-13 {
+    font-size: 50px;
+    line-height: 53px;
+}
+.btn-1 {
+    font-size: 19px; height: auto; padding: 18px 22px ;
+}
+.main-menu > li > .nav-link {
+    font-weight: 700;
+}
+/*
+.footer-social-link {
+    li {
+        position: relative;
+
+        &:after {
+            content: ".";
+            position: absolute;
+            left: -50%;
+            top: -10px;
+            font-size: 25px;
+            transform: translateX(50%);
+        }
+
+        &:first-child {
+
+            &:after {
+                display: none;
+            }
+        }
+
+    }
+
+}
+*/
+
+
+.timeline-area {
+    .single-widgets {
+        @include mobile-lg {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+
+        @include desktops {
+            width: 420px;
+            flex: inherit;
+        }
+
+        &:nth-child(3) {
+            @include desktops {
+                margin-top: 75px;
+            }
+        }
+
+        &:nth-child(4) {
+            @include desktops {
+                margin-top: 145px;
+            }
+        }
+    }
+}
+.max-w-193 { max-width: 100%; }
+.font-size-10,
+.font-size-11,
+.font-size-12,
+.font-size-13 {
+    font-family: 'Glitten-Regular' !important;
+}
+
+
+@media (max-width: 768px) {
+    .p-sm-br-none br {
+        display: none;
+    }
+    .video-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .video-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
